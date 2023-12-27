@@ -8,6 +8,12 @@ h1 {
     font-size: 4rem;
 }
 
+
+
+h4 {
+    font-size: 25px;
+}
+
 p {
     font-size: 18px;
 }
@@ -15,12 +21,13 @@ p {
 .container {
     display: flex;
     justify-content: center;
+    margin-top: 20vh;
 }
 
 .card {
     display: flex;
-    border: 1px solid black;
     width: 600px;
+    box-shadow: 8px 7px 34px -21px rgba(66, 68, 90, 1);
 }
 
 .card-left {
@@ -37,18 +44,23 @@ p {
     color: hsl(241, 100%, 89%);
 }
 
+.card-left h3 {
+    margin: 20px 0 0 0;
+    font-size: 35px;
+}
+
 .card-left h4,
 h3 {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .description {
     text-align: center;
-    margin: 15px;
+    margin: 0px 15px 35px 15px;
 }
 
 .score-area {
-    border-radius: 50%;
+    border-radius: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,24 +89,88 @@ h3 {
 .card-right {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
+    margin-left: 20px;
 }
 
-.card-right {
-    align-items: center;
+.card-right-title h4 {
+    margin: 33px 0 33px 10px;
+    font-size: 25px;
 }
+
 
 .score {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+    margin: 0 20px 15px 20px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+
 }
 
 .right-side {
     display: flex;
 }
 
+.actual-score {
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.reaction.score .left-side p {
+    color: hsl(0, 100%, 67%);
+}
+
+.reaction.score {
+    background-color: hsl(0, 100%, 99%);
+}
+
+.memory.score .left-side p {
+    color: hsl(39, 100%, 56%);
+}
+
+.memory.score {
+    background-color: hsl(39, 100%, 99%);
+}
+
+.verbal.score {
+    background-color: hsl(166, 100%, 99%);
+}
+
+.verbal.score .left-side p {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual.score {
+    background-color: hsl(234, 85%, 99%);
+}
+
+.visual.score .left-side p {
+    color: hsl(234, 85%, 45%);
+}
+
 .left-side {
     display: flex;
     align-items: center;
+    gap: 5px;
+}
+
+.button-continue {
+    text-align: center;
+    margin: 0;
+    padding: 15px 30px 15px 30px;
+    background-color: hsl(224, 30%, 27%);
+    margin: 0px 20px 0px 20px;
+    border-radius: 25px;
+}
+
+.button-continue:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+.button-continue p {
+    margin: 0;
+    color: white;
 }
