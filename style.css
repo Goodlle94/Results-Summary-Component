@@ -1,6 +1,7 @@
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     min-height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -180,6 +181,7 @@ h3 {
         flex-direction: column;
         box-shadow: none;
         width: 375px;
+        height: 100vh;
     }
 
     .card-left {
@@ -189,9 +191,22 @@ h3 {
 
     .card-right {
         width: auto;
+        margin: 0;
+    }
+
+    .card-right-title {
+        margin-left: 10px;
     }
 
     .description>p {
         padding: 0px 25px 0px 25px;
+    }
+
+    .button-continue {
+        margin-bottom: 2rem;
+    }
+
+    .attribution {
+        display: none;
     }
 }
